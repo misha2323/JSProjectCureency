@@ -1,64 +1,46 @@
-﻿
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>My Blog</title>
 		<meta  charset-"UTF-8"/>
 		<style>
-		html {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap%27');
+        
+html{
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Handlee', cursive;
+    font-family: 'Roboto';
     font-size: 13pt;
-    background-color: #efefef;
+    background-color: #232323;
     padding: 10px;
     margin: 0;
+    margin-right:20%; 
+    margin-left:20%; 
 }
 h1 {
     font-size: 15pt;
-    color: #20bcd5;
+    color: #FFF;
     text-align: center;
     padding: 18px 0 18px 0;
     margin: 0 0 10px 0;
 }
-h1 span {
-    border: 4px dashed #20bcd5;
-    padding: 10px;
-}
-p {
-    padding: 0;
-    margin: 0;
-}
+
+
 .img-circle {
     border: 3px solid white;
     border-radius: 50%;
 }
 .section {
-    background-color: #fff;
+    background-color:#393939 ;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
-}
-#header {
-    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
-    background-size: cover;
-}
-#header img {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin: auto;
-}
-#header p {
-    font-size: 25pt;
-    color: #3b464c;
-    padding-top: 5px;
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
-}
+}.
+
+
 .quote {
     font-size: 12pt;
     text-align: right;
@@ -86,8 +68,14 @@ li {
 progress {
     width: 70%;
     height: 20px;
-    color: #3fb6b2;
+    color: #FFF;
     background: #efefef;
+}
+        .log{
+    background-color:#292929 ;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 progress::-webkit-progress-bar {
     background: #efefef;
@@ -96,7 +84,7 @@ progress::-webkit-progress-value {
     background: #3fb6b2;
 } 
 progress::-moz-progress-bar {
-    color: #3fb6b2;
+    color: #FFF;
     background: #efefef;
 }
 iframe, audio {
@@ -114,7 +102,7 @@ form {
     margin-top: 0;
 }
 .submit {
-    background-color: #3fb6b2;
+    background-color: lightslategray;
     padding: 12px 45px;
     border-radius: 5px;
     cursor: pointer;
@@ -125,7 +113,7 @@ form {
     font-weight: bold;
 }
 .submit:hover {
-    background-color: #43a09d;
+    background-color: black;
 }
 textarea {
     height: 100px;
@@ -168,129 +156,90 @@ input, textarea {
 
 	   text-align: right;
     padding-bottom: 10px;
-    color: grey;
+    color: FFF;
 }
-
+.logo{
+    color:white;
+    text-align: center;
+    font-size: 35px; 
+}
+.logo{
+    color:white;
+    text-align: center;
+    font-size: 35px; 
+}
+.reg{
+    position: absolute;
+    right: 23%;
+    top: 10px;  
+    color: white;
+    
+    }
+            .photo{
+                border-radius: 100%;
+                margin:20px;
+                position: absolute;
+                right: 30px;
+                top: 10px;
+                width: 50;
+                height: 50;
+            }
+            .curses{
+                color:antiquewhite;
+                padding-left:40%;
+            }
 		</style>
        
     </head>
     
     <body>
         <!-- header start -->
-        <div id="header" class="section">
-            <img alt="" class="img-circle" src="https://code.sololearn.com/Icons/Avatars/0.jpg">
-            <p>mixail medvedev</p>
+        <div id="header" class="log">
+            <h3 class="logo">Currency.com</h3>
+            <div class="reg"><p>Name surname</p>
+            <img src="..." class="photo">
         </div>
         <!-- header end -->
         
         <!-- About Me section start -->
         <div class="section">
-            <h1><span>About Me</span></h1>
-            <p>
-                Hey! I'm <strong>misha</strong>. Coding has changed my world. It's not just 
-				about apps. Learning to code gave me <i>problem-solving skills</i> and a way to communica
-				te with others on a technical level. I can also develop websites and use my coding skills to get a better job. And I learned
-				it all at <strong>SoloLearn</strong> where they build your self-esteem
-				and keep you motivated. Join me in this rewarding journey. You'll have fun, get help, and learn along the way!
-            </p>
-            <p class="quote">"Declare variables, not war"</p>
+            <h1><span>Курс валюты</span></h1>
+            <div class="curses">
+            <div><p>Dol 75 Eur 100 Cdf 88</p></div>
+            <div><p>Dol 75 Eur 100 Cdf 88Dol 75 Eur 100 Cdf 88</p></div>
+                <div><p>Dol 75 Eur 100 Cdf 88</p></div></div>
+           
         </div>
         <!-- About Me section end -->
         
         <!-- My Schedule section start -->
+       
         <div class="section">
-            <h1><span>моё расписание</span></h1>
-            <table>
-                <tr>
-                    <th>Day</th>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                </tr>
-                <tr>
-                    <td>8-8:30</td>
-                    <td class="selected">практика</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>9-10</td>
-                    <td></td>
-                    <td class="selected">учеба</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1-1:30</td>
-                    <td></td>
-                    <td></td>
-                    <td class="selected">написание кода</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3:45-5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="selected">игра</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6-6:15</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="selected">отдых/</td>
-                </tr>
-            </table>
+            <h1><span>Статистика валюты </span></h1>
+           <canvas></canvas>
         </div>
         <!-- My Schedule section end -->
         
         
         <!-- My Skills section start -->
         <div class="section">
-            <h1><span>мои умения</span></h1>
-            <ul>
-                <li>HTML <br />
-                    <progress min="0" max="100" value="80"></progress>
-                </li>
-                <li>CSS<br />
-                    <progress min="0" max="100" value="50"></progress>
-                </li>
-                <li>JAvaSсkript<br />
-                    <progress min="0" max="100" value="30"></progress>
-                </li>
-            </ul>
-        </div>
+            <h1><span>Новости экономики</span></h1>
+            
+            </div>
         <!-- My Skills section end -->
         
         
          <!-- Media section start -->
         <div class="section">
-            <h1><span>квадрат раздумий</span></h1>
-            <iframe height="150" width="300" src="" allowfullscreen frameborder="0"></iframe>
+            <h1><span>Статья</span></h1>
+            
         </div>
         <!-- Media section end -->
         
         <!-- Form section start -->
        <div class="section">
-            <h1><span>напиши о себе</span></h1>
+            <h1><span>Оставьте коментарий</span></h1>
             
-            <svg class="face" height="100" width="100">
-                <circle cx="50" cy="50" r="50" fill="#FDD835"/>
-                <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
-                <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
-                <circle cx="30" cy="30" r="5" fill="#000000"/>
-                <circle cx="70" cy="30" r="5" fill="#000000"/>
-                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
-            </svg>
                  
             <form>
                 <input name="name" placeholder="Name" type="text" required /><br/>
@@ -304,16 +253,11 @@ input, textarea {
         <!-- Contacts section start -->
         <div class="section" id="contacts">
      
-            <div>
           
-                </a>
-            </div>
         </div>
         <!-- Contacts section end -->
+    
         
-        <div class="copyright">
-            &copy; 2017 My Blog. All rights reserved.
-        </div>
         
     </body>
 </html>
